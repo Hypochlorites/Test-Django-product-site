@@ -8,3 +8,7 @@ def homepage(request):
 def product(request):
   context ={}
   return render(request, 'base/product.html', context)
+
+def mission(request):
+  context = {}
+  return render(request, 'base/mission.html', context)

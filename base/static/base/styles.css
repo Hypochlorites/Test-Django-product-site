@@ -3,11 +3,16 @@
 
 h1 {
   color: blue;
+  text-align: center;
 }
-
+nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .nav-links{
   display: flex;
-
+  
 }
 
 .nav-links li{
@@ -19,5 +24,20 @@ h1 {
 
 .nav-links a{
   text-decoration: none;
+  
+}
+
+
+
+
+
+/* Cards */
+.card-container{
+  width: 60%;
+  margin: auto;
+}
+
+.card-container .card{
+  width: 150px;
   
 }
