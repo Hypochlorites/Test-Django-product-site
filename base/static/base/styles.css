@@ -1,0 +1,23 @@
+
+
+
+h1 {
+  color: blue;
+}
+
+.nav-links{
+  display: flex;
+
+}
+
+.nav-links li{
+  padding: 10px;
+  list-style-type: none;
+  
+}
+
+
+.nav-links a{
+  text-decoration: none;
+  
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+
+  
+  <head>
+
+    
+
+
+    
+    {% block head %}
+    {% endblock %}
+
+  </head>
+  
+  <body>
+    
+    <nav>
+      <div>
+        <h1></h1>
+        <ul class="nav-links">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'product' %}">Product</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Mission</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    {% block content %}
+    {% endblock %}
+    
+  </body>
+  
+</html>
