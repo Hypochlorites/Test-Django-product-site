@@ -1,30 +1,40 @@
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+}
 
-
-
+body{
+  background-color: #2fe00b;
+}
 h1 {
   color: blue;
   text-align: center;
 }
+
+/* NavBar styling */
+
 nav div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: mediumvioletred; 
+  height: 50px;
+  width: 100%;
+}
+nav p {
+  margin-left: 10px;
+  font-size: 50px;
 }
 .nav-links{
   display: flex;
-  
 }
-
 .nav-links li{
   padding: 10px;
   list-style-type: none;
-  
 }
-
-
 .nav-links a{
   text-decoration: none;
-  
 }
 
 

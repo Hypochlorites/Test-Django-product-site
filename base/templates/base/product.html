@@ -8,23 +8,20 @@
 {% endblock %}
 
 {% block content %}
-<h1> Buy to support the usurption of earth </h1>
+<h1> Buy to support the usurption of earth! </h1>
 
 <main>
   <div class="card-container">
 
-
+    {% for product in products.all %}
     <div class="card"> 
-      <h3 class="product-name"> World Eater </h3>
-      <p class="product-price"> $228 </p>
-      <!-- Product image
-       Heading
-       price
-       description
-       add to cart button 
-       -->
-    </div>
+      <h3 class="product-name"> {{ product.product_name }}</h3>
+      <p class="product-price"> {{ product.product_price}} </p>
+      <p class="product-description"> {{ product.product_description}} </p>
+      <button type="button"> Add to cart </button>
 
+    </div>
+    {% endfor %}
     
 
 

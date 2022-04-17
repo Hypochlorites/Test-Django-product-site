@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import Product
+
 
 def homepage(request):
   context ={}
@@ -6,8 +8,12 @@ def homepage(request):
 
 
 def product(request):
-  context ={}
+  products = Product.objects
+  context = {
+    'products': products,
+  }
   return render(request, 'base/product.html', context)
+  
 
 def mission(request):
   context = {}
