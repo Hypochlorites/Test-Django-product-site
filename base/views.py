@@ -18,3 +18,11 @@ def product(request):
 def mission(request):
   context = {}
   return render(request, 'base/mission.html', context)
+
+def contact(request):
+  context = {}
+  return render(request, 'base/contact.html', context)
+
+def settings(request):
+  context = {}
+  return render(request, 'base/settings.html', context)
