@@ -1,0 +1,36 @@
+{% extends "./default.html" %} 
+
+{% load static %}
+    
+
+{% block head %}
+<title> Fulfillmentationalism </title>
+<link rel="stylesheet" href="{% static 'base/styles.css' %}">
+{% endblock %}
+
+{% block content %}
+<h1> Orders:  </h1>
+
+   {% for order in orders.all %}
+    <div class="Order">
+      <h3 class="ordered_product"> {{ order.ordered_product }}</h3>
+      <p class="firstname"> {{ order.first_name }} </p>
+      <p class="lastname"> {{ order.last_name }} </p>
+      <p class="address"> {{ order.address }} </p>
+      <p class="city"> {{ order.city }} </p>
+      <p class="zipcode"> {{ order.zip_code }} </p>
+      <p class="time"> {{ order.order_time }} </p>
+      <p class="fulfilment-status {{order.fulfillment_status}}"> {{ order.fulfillment_status }} </p>
+    </div>
+
+      
+
+
+
+
+
+
+    {% endfor %}
+
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "./default.html" %} 
+
+{% load static %}
+    
+
+{% block head %}
+<title> Product | {{product.product_name}} </title>
+<link rel="stylesheet" href="{% static 'base/styles.css' %}">
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="card">
+  <img class="product-img" src="{{ product.product_img.url }}" alt="img">
+
+      
+  <h3 class="product-name"> {{ product.product_name }}</h3>
+  <p class="product-price"> {{ product.product_price }} </p>
+<p class="product-description-full"> {{ product.product_description_full }} </p>
+      <button type="button"> Add to cart </button>
+    </div>
+
+{% endblock %}

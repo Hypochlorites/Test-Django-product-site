@@ -1,20 +1,3 @@
 {
-  "files": {
-    "base/models.py": [
-      {
-        "id": "35660f68-75ea-4520-bf64-447d39fcd3a2",
-        "line": 9,
-        "version": 327,
-        "index": 247
-      }
-    ],
-    "base/static/base/styles.css": [
-      {
-        "id": "97d9103d-e770-440d-9c19-a0f1f57b6cef",
-        "line": 7,
-        "version": 912,
-        "index": 61
-      }
-    ]
-  }
+  "files": {}
 }

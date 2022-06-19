@@ -10,6 +10,7 @@ body{
 h1 {
   color: blue;
   text-align: center;
+  padding: 20px
 }
 
 /* NavBar styling */
@@ -38,16 +39,52 @@ nav p {
 }
 
 
+/* Fulfillmennationalsim */
 
+.False {
+  background-color: darkred;
 
+}
+.True{
+  background-color: palegreen; 
+}
 
+  
 /* Cards */
 .card-container{
-  width: 60%;
+  max-width: 750px;
+  
   margin: auto;
-}
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px;
+  column-gap: 25px;
+  row-gap: 25px;
 
-.card-container .card{
-  width: 150px;
   
 }
+
+.card{
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+}
+
+.card-container .product-img{
+  width: 254px;
+  height: 244px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-wrapper{
+
+}
+
+.product-description {
+  font-size: 12px;
+}
+
+
