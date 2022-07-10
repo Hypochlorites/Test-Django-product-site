@@ -23,6 +23,10 @@ nav div {
   height: 50px;
   width: 100%;
 }
+
+nav a {
+  text-decoration: none;
+}
 nav p {
   margin-left: 10px;
   font-size: 50px;

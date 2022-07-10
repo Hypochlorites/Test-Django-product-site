@@ -17,13 +17,12 @@
     
     <nav>
       <div>
-        <p> Σ</p>
+        <p><a href="{% url 'home' %}">Σ</a></p>
         <ul class="nav-links">
           <li><a href="{% url 'home' %}">Home</a></li>
           <li><a href="{% url 'product' %}">Product</a></li>
-          <li><a href="{% url 'settings' %}">Settings</a></li>
-          <li><a href="{% url 'mission' %}">Mission</a></li>
           <li><a href="{% url 'contact' %}">Contact</a></li>
+          <li><a href="{% url 'login' %}">Login</a></li>
         </ul>
       </div>
     </nav>

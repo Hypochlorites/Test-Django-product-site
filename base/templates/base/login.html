@@ -1,0 +1,24 @@
+{% extends "./default.html" %} 
+
+{% load static %}
+    
+
+{% block head %}
+<title> Login  </title>
+<link rel="stylesheet" href="{% static 'base/styles.css' %}">
+{% endblock %}
+
+{% block content %}
+<h1> Put in account details below: </h1>
+
+<input type="text"> Username/email </input>
+<input type="text"> Password </input>
+<button type ="button"> Login </button>
+
+<button type ="button"> Forgot password? </button>
+
+
+
+
+
+{% endblock %}

@@ -11,12 +11,9 @@
 <h1> Buy to support the usurption of earth! </h1>
 
 <main>
-
-
-  <a href="{% url 'order' %}">Buy Product</a>
   
   <div class="card-container">
-  {% for product in products.all %}
+  {% for product in object_list %}
     <div class="card">
   
       <a href="{% url 'details' product.id %}"> 

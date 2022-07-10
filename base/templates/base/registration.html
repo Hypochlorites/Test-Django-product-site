@@ -4,11 +4,18 @@
     
 
 {% block head %}
-<title> Mission </title>
+<title> Registration  </title>
 <link rel="stylesheet" href="{% static 'base/styles.css' %}">
 {% endblock %}
 
 {% block content %}
-<h1> Our mission, </h1>
-<p> With the unforseen power of our heterotrophic, multicellular organisms the earth shall fall! </p>
+
+
+<form method='POST'>
+
+  {{ form }}
+  <button type="submit"> Sign up </button>
+  
+</form>
+
 {% endblock %}

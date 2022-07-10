@@ -9,28 +9,24 @@
 {% endblock %}
 
 {% block content %}
-<h1> Orders:  </h1>
+<h1> Order:  </h1>
 
-   {% for order in orders.all %}
-    <div class="Order">
-      <h3 class="ordered_product"> {{ order.ordered_product }}</h3>
-      <p class="firstname"> {{ order.first_name }} </p>
-      <p class="lastname"> {{ order.last_name }} </p>
-      <p class="address"> {{ order.address }} </p>
-      <p class="city"> {{ order.city }} </p>
-      <p class="zipcode"> {{ order.zip_code }} </p>
-      <p class="time"> {{ order.order_time }} </p>
-      <p class="fulfilment-status {{order.fulfillment_status}}"> {{ order.fulfillment_status }} </p>
+    <div class="order">
+      <h3 class="ordered_product"> {{ object.objected_product }}</h3>
+      <p class="firstname"> {{ object.first_name }} </p>
+      <p class="lastname"> {{ object.last_name }} </p>
+      <p class="address"> {{ object.address }} </p>
+      <p class="city"> {{ object.city }} </p>
+      <p class="zipcode"> {{ object.zip_code }} </p>
+      <p class="time"> {{ object.object_time }} </p>
+      <p class="fulfilment-status {{object.fulfillment_status}}"> {{ object.fulfillment_status }} </p>
     </div>
 
-      
+  <form method="post">{%csrf_token%}
+    {{ form.as_p }}
+    <input type="submit" value="Update"
+  </form>
 
-
-
-
-
-
-    {% endfor %}
 
 
 {% endblock %}
